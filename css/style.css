@@ -1,0 +1,14 @@
+:root {
+	--color-basic: #000;
+	--color-link: #a1a19c;
+	--color-light: ;
+	--color-dark: #a1a19c;
+	--color-back-body: #f9f9f9;
+	--color-back-header: #e7e6e0;
+	--color-back-footer: #e0e1e7;
+}
+
+
+body {
+	font: 1rem/1.4 'PT Sans', sans-serif;
+}
