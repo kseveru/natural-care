@@ -10,14 +10,14 @@ $(document).ready(function() {
 	var userChoicesArray = [];
 	$("#properties input").click(function() {
 		var property = $(this).val();
-		$(".remedy__list li").hide();
+		$(".remedy__item").hide();
 		if(jQuery.inArray(property, userChoicesArray) == -1){
 			 userChoicesArray.push(property);
 		} else {
 			 userChoicesArray.splice($.inArray(property, userChoicesArray), 1);
 		}
 
-		$(".remedy__list li").each(function() {
+		$(".remedy__item").each(function() {
 				var propertyArray = $(this).data("properties").split(" ");
 				if (containsAll(userChoicesArray, propertyArray)) {
 					$(this).show();
